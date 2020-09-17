@@ -40,11 +40,11 @@ function isDivisible(num1, num2) {
 
 // Arithmetic
 function arithmeticSum(start, stop, step) {
-    let sum = start;
-    let addStep = step
-    for (let n = start; n <= stop; addStep++) {
-        return sum
+    let sum = 0;
+    for (let n = start; n <= stop; n += step) {
+        sum += n
     }
+    return sum
 }
 
 console.log("The sum of 1 + 2 + … + 1000 is " + arithmeticSum(1, 1000, 1) + ".");
