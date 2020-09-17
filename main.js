@@ -40,14 +40,15 @@ function isDivisible(num1, num2) {
 
 // Arithmetic
 function arithmeticSum(start, stop, step) {
-    let addStep = step;
     let sum = start;
-    while (addStep < stop) {
-        addStep += step;
-        sum += addNumber;
+    let addStep = step
+    for (let n = start; n <= stop; addStep++) {
+        return sum
     }
-    return sum;
 }
+
+console.log("The sum of 1 + 2 + … + 1000 is " + arithmeticSum(1, 1000, 1) + ".");
+console.log("The sum of 10 + 15 + … + 50 is " + arithmeticSum(10, 50, 5) + ".");
 
 // Constrain
 function constrain(n, low, high) {
